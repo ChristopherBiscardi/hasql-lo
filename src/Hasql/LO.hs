@@ -1,8 +1,9 @@
 module Hasql.LO
        ( create
-       , open
-       , write
        , createFromByteString
+       , open
+       , put
+       , write
        ) where
 
 import           Data.ByteString (ByteString)

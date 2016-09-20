@@ -27,7 +27,7 @@ writeToNewLO :: HT.Transaction Int32
 writeToNewLO = do
   oid <- createFromByteString Nothing "heya!"
   l <- open oid WRITE
-  o <- write oid "things"
+  o <- write l "things"
   return oid
 
 someFunc :: IO ()
