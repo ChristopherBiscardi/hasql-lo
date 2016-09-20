@@ -24,8 +24,8 @@ import           Hasql.LO.Types
 writeToNewLO :: HT.Transaction Int32
 writeToNewLO = do
   oid <- createFromByteString Nothing "heya!"
-  l <- open oid WRITE
-  o <- write oid "things"
+  fd <- open oid WRITE
+  o <- write fd "things"
   return oid
 
 someFunc :: IO ()
