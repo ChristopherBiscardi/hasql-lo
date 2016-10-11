@@ -4,6 +4,9 @@ module Hasql.LO
        , open
        , put
        , write
+       , seek
+       , tell
+       , close
        ) where
 
 import           Data.ByteString   (ByteString)
